@@ -1,0 +1,176 @@
+:root {
+  --main-color: #ffcb59;
+  --main-color-opacity: #fff7e4;
+  --secondary-color: #3d2a20;
+}
+
+/* navbar*/
+
+
+
+
+
+/* Animação nas palavras*/
+
+.animated {
+  position: relative;
+}
+
+.animated-info {
+  display: inline-block;
+  vertical-align: top;
+  min-width: 250px;
+  position: relative;
+}
+
+.animated-item {
+  color: var(--main-color);
+}
+
+.animated-item {
+  display: block;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  animation: BottomTotop 6s linear infinite 0s;
+}
+
+.animated-item:nth-child(2n+2) {
+  animation-delay: 2s;
+}
+
+.animated-item:nth-child(3n+3) {
+  animation-delay: 4s;
+}
+
+@keyframes BottomTotop {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  25% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  30% {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Hero */
+
+.hero {  
+  padding-top: 0rem;
+}
+
+.hero .container {
+  position: relative;
+  overflow: hidden;
+  
+}
+
+.heroText {
+  margin-left: 20px;
+  background: #fff;
+  position: absolute;
+  z-index: 2;
+  top: 15%;
+  left: 0;
+  padding: 1.5rem 2.5rem;
+  width: 50%;
+}
+
+/* Restaurant and Casino */
+
+
+
+#restaurant-casino .card{
+  width: 500px;
+}
+
+/* Badrooms */
+
+
+.carousel-caption {
+    width:100%;
+    height:100%;
+    left:0 !important;
+  
+}
+
+.suite-name{
+  background-color: white;
+}
+
+.carousel-caption h2 {
+  color: black;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+/*  GPS */
+ .mapouter {
+    position: relative;
+    text-align: right;
+    height: 500px;
+    width: 1080px;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 500px;
+  width: 1080px;
+}
+
+
+@media (max-width: 768px) {
+
+    .mapouter {
+      position: relative;
+      text-align: right;
+      height: 400px;
+      width: 100vw;
+      margin: 0;
+  }
+
+  .gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 400px;
+    width: 100vw;
+    margin: 0;
+  }
+
+  header #login{
+    margin-bottom: 5px;
+  }
+}
+
+
+/* QUARTOS */
+#bedroom-site{
+  padding-bottom: 50px;
+}
+#bedroom-site .card{
+  margin-top: 50px;
+}
+
+/* Card Bank */

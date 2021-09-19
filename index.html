@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script src="js/bootstrap.js"></script>
+
+    <title>Hotel Morning</title>
+</head>
+
+<body>
+    <header id="header">
+        <nav class="navbar navbar-expand-lg navbar-light  navigation-wrap">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo.svg" alt="logo" width="275">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#restaurant-casino">Restaurantes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#bedroom">Quartos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#events">Eventos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#gps">Localização</a>
+                        </li>
+                        <div class="row">
+                            <div class="col-12 col-md-4" id="login">
+                                <li class="nav-item btn-cta">
+                                    <button class="btn btn-primary main-btn" data-bs-toggle="modal"
+                                        href="#loginModal">Entrar</button>
+                                </li>
+                            </div>
+                            <div class="col-12 col-md-8" id="checkIn">
+                                <li class="nav-item btn-cta">
+                                    <a class="btn btn-primary main-btn" href="second.html">Reservar quarto</a>
+                                </li>
+                            </div>
+                        </div>
+
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="hero mb-5" id="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="7000">
+                                <img src="img/image1.jpg" class="d-block w-100 h-100" alt="">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <img src="img/image2.jpg" class="d-block w-100 h-70" alt="">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/image3.jpg" class="d-block w-100 h-100" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="heroText d-flex flex-column justify-content-center">
+                        <h1 class="mt-auto mb-2">
+                            Hotel Morning, o lugar ideal para
+                            <div class="animated-info">
+                                <span class="animated-item">você.</span>
+                                <span class="animated-item">sua família.</span>
+                                <span class="animated-item">descansar.</span>
+                            </div>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="restaurant-casino mb-5" id="restaurant-casino">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 col-md-6">
+                    <img src="img/restaurant.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-12 col-md-6 align-self-center">
+                    <div class="card border-dark">
+                        <div class="card-body">
+                            <h4 class="card-title">Restaurante</h4>
+
+                            <p class="card-text">A gastronomia do Restaurante Morning apresenta culinária Americana.
+                                Receitas preparadas com técnicas
+                                minuciosas e os melhores ingredientes valorizam o sabor dos alimentos. Somado a uma
+                                equipe altamente qualificada para
+                                garantir que tudo seja servido de forma personalizada, em um ambiente sofisticado, com
+                                luz natural e um jardim vertical
+                                proporcionam experiências únicas e inesquecíveis.</p>
+                            <a href="#" class="card-link">Ver mais...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col-12 col-md-6 align-items-center d-flex flex-row-reverse">
+                    <div class="card border-dark" style="right: 0;">
+
+                        <div class="card-body">
+                            <h4 class="card-title">Cassino</h4>
+
+                            <p class="card-text">A gastronomia do Restaurante Morning apresenta culinária Americana.
+                                Receitas preparadas com técnicas
+                                minuciosas e os melhores ingredientes valorizam o sabor dos alimentos. Somado a uma
+                                equipe altamente qualificada para
+                                garantir que tudo seja servido de forma personalizada, em um ambiente sofisticado, com
+                                luz natural e um jardim vertical
+                                proporcionam experiências únicas e inesquecíveis.</p>
+                            <a href="#" class="card-link">Ver mais...</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <img src=" img/casino.jpg" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bedroom mb-5" id="bedroom">
+        <div class="container">
+            <div class="row">
+                <div class="col-1">
+
+                </div>
+                <div class="col-12 col-md-10">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/bedroom1.jpg" class="d-block w-100" alt="Suite basica">
+                                <div class="carousel-caption bedroom-description">
+                                    <div class="suite-name">
+                                        <h2>Suite Basica</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/bedroom2.jpg" class="d-block w-100" alt="Suite intermediaria">
+                                <div class="carousel-caption bedroom-description">
+                                    <div class="suite-name">
+                                        <h2>Suite Intermediaria</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/bedroom3.jpg" class="d-block w-100" alt="Suite master">
+                                <div class="carousel-caption bedroom-description">
+                                    <div class="suite-name">
+                                        <h2>Suite Master</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-1">
+
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+    <section class="events mb-5" id="events">
+        <div class="container">
+            <h2 class="text-center mb-4">Eventos</h2>
+            <div class="card-group mb-5">
+                <div class="card">
+                    <img src="img/cinema.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Cinema</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id delectus
+                            officia excepturi vitae sit iure. At natus quidem non ducimus. Ipsum id a illo debitis.
+                            Laudantium consequuntur eos et magni?</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/palestra.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Palestras</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+                            similique quibusdam, dolores nemo cumque eum corporis libero quod assumenda unde qui
+                            blanditiis nihil accusamus sequi. A quia quasi assumenda quos!</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/esqui.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Esqui</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis unde
+                            aliquid sequi nobis magnam deserunt enim quae autem praesentium perspiciatis, molestiae
+                            aperiam in, atque ipsam veritatis? Pariatur cumque minima aliquid?
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-8">
+                    <div class="card text-white bg-dark text-center" id="card-banner">
+                        <div class="card-body">
+                            <h5 class="card-title">SOBRE</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis fuga rerum vitae
+                                libero
+                                ratione corporis illo laudantium vel et tenetur, eum, iste beatae adipisci velit odio
+                                excepturi!
+                                In, reiciendis nemo! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias
+                                ullam
+                                veniam atque maxime rem, architecto aliquam dolorem ea omnis repellendus ratione quo,
+                                sint
+                                perspiciatis, aliquid quas. Aperiam error quos necessitatibus.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2"></div>
+            </div>
+    </section>
+    <section class="gps mb-5" id="gps">
+        <div class="container">
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-12 col-md-10">
+                    <div class="mapouter">
+                        <div class="gmap_canvas"><iframe width="1080" height="500" id="gmap_canvas"
+                                src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                                href="https://putlocker-is.org"></a>
+                            <br>
+                            <a href="https://www.embedgooglemap.net"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+            </div>
+    </section>
+    <footer class="bg-light text-center text-white mt-5">
+        <div class="container p-4 pb-0">
+            <section class="mb-4">
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998;" href="#!"
+                    role="button"><i class="bi bi-facebook"></i></a>
+
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee;" href="#!"
+                    role="button"><i class="bi bi-twitter"></i></a>
+
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39;" href="#!"
+                    role="button"><i class="bi bi-google"></i></a>
+
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac;" href="#!"
+                    role="button"><i class="bi bi-instagram"></i></a>
+
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca;" href="#!"
+                    role="button"><i class="bi bi-linkedin"></i></a>
+
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #333333;" href="#!"
+                    role="button"><i class="bi bi-github"></i></a>
+            </section>
+        </div>
+
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            <a class="text-white" href="#">Footer sem criatividade</a>
+        </div>
+    </footer>
+
+    <!-- MODALS -->
+
+    <div class="modal fade" id="loginModal" aria-hidden="true" aria-labelledby="loginModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModal">Faça o login para continuar</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="email" name="email"
+                                placeholder="Digite o seu e-mail">
+                            <label for="email" class="form-label">Digite o seu e-mail</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control" id="email" name="password"
+                                placeholder="Digite a sua senha">
+                            <label for="password" class="form-label">Digite a sua senha</label>
+                        </div>
+                        <input type="submit" class="btn btn-primary" value="Entrar">
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-bs-target="#registerModal" data-bs-toggle="modal"
+                        data-bs-dismiss="modal">Cadastrar-se</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="registerModal" aria-hidden="true" aria-labelledby="registerModal" tabindex="-1">
+        <div class="modal-dialog  modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="registerModal">Realize o seu cadastro</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="name" name="name"
+                                placeholder="Digite o seu nome">
+                            <label for="name" class="form-label">Digite o seu nome</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="lastname" name="lastname"
+                                placeholder="Digite o seu sobrenome">
+                            <label for="lastname" class="form-label">Digite o seu sobrenome</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="email" name="email"
+                                placeholder="Digite o seu e-mail">
+                            <label for="email" class="form-label">Digite o seu e-mail</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="number" class="form-control" id="cpf" name="cpf"
+                                placeholder="Digite o seu CPF">
+                            <label for="cpf" class="form-label">Digite o seu CPF</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control" id="password" name="password"
+                                placeholder="Digite a sua senha">
+                            <label for="password" class="form-label">Digite a sua senha</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control" id="confirmpassword" name="confirmpassword"
+                                placeholder="Confirme sua senha">
+                            <label for="confirmpassword" class="form-label">Confirme sua senha</label>
+                        </div>
+                        <div class="mb-3">
+                            <div class="form-check mb-2">
+                                <input type="checkbox" class="form-check-input" value="" id="agree-form"
+                                    name="agree-form">
+                                <label for="agree-form" class="form-check-label">
+                                    Você aceita os <a href="#">termos de serviço</a> ?
+                                </label>
+                            </div>
+                            <input type="submit" class="btn btn-primary" value="Cadastrar">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-bs-target="#registerModal" data-bs-toggle="modal">Eu já tenho
+                        uma conta</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TOAST -->
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+        <a href="#header">
+            <i class="bi bi-arrow-up-circle h1"></i>
+        </a>
+    </div>
+</body>
+
+</html>

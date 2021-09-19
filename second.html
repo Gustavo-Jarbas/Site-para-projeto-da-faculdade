@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <script src="js/bootstrap.js"></script>
+    <title>Quartos</title>
+</head>
+
+<body id="bedroom-site">
+    <header id="header mb-5">
+        <nav class="navbar navbar-expand-lg navbar-light  navigation-wrap">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo.svg" alt="logo" width="275">
+                </a>
+                <button class="navbar-toggler border-0" type="button" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation">
+                    <a class="pe-auto" data-bs-toggle="modal" href="#profile-info">
+                        <i class="bi bi-person-circle h1"></i>
+                    </a>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <div class="row">
+                            <div class="col-12 col-md-4" id="login">
+                                <li class="nav-item btn-cta">
+                                    <a class="pe-auto" data-bs-toggle="modal" href="#profile-info">
+                                        <i class="bi bi-person-circle h1"></i>
+                                    </a>
+                                </li>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="bedroom" id="bedroom">
+        <div class="container">
+            <div class="row">
+                <div class="col"></div>
+                <div class="col">
+                    <div class="form-floating mb-3">
+                        <input type="date" class="form-control" id="checkin">
+                        <label for="checkin">Data de Check-in</label>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-floating">
+                        <input type="date" class="form-control" id="checkout">
+                        <label for="checkout">Data de Check-out</label>
+                    </div>
+                </div>
+                <div class="col"></div>
+            </div>
+            <div class="card" style="max-width: 75%;">
+                <div class="row g-0">
+                    <div class="col-md-6">
+                        <img src="img/bedroom1.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-5">
+                        <div class="card-body">
+                            <h3 class="card-title">Suite Basica</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio dolorum
+                                dolor officia laboriosam volunostrum, sum porro rem! Lorem psum dolor sit, amet
+                                consectetur adipisicing elit. Reprehenderit quam debitis sint
+                                voluptate, tempore itaque animi aut non rerum voluptatem.
+                            </p>
+                            <p class="h5 price">R$ 800 por dia</p>
+                            <a class="btn btn-primary mt-3" data-bs-toggle="modal" href="#checkInModal">Reservar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="max-width: 75%;">
+                <div class="row g-0">
+                    <div class="col-md-6">
+                        <img src="img/bedroom2.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-5">
+                        <div class="card-body">
+                            <h3 class="card-title">Suite Intermediaria</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio dolorum
+                                dolor officia laboriosam volunostrum, sum porro rem! Lorem psum dolor sit, amet
+                                consectetur adipisicing elit. Reprehenderit quam debitis sint
+                                voluptate, tempore itaque animi aut non rerum voluptatem.
+                            </p>
+                            <p class="h5 price">R$ 1.200 por dia</p>
+                            <a class="btn btn-primary mt-3" data-bs-toggle="modal" href="#checkInModal">Reservar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="max-width: 75%;">
+                <div class="row g-0">
+                    <div class="col-md-6">
+                        <img src="img/bedroom3.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-5">
+                        <div class="card-body">
+                            <h3 class="card-title">Suite Master</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio dolorum
+                                dolor officia laboriosam volunostrum, sum porro rem! Lorem psum dolor sit, amet
+                                consectetur adipisicing elit. Reprehenderit quam debitis sint
+                                voluptate, tempore itaque animi aut non rerum voluptatem.
+                            </p>
+                            <p class="h5 price">R$ 2.000 por dia</p>
+                            <a class="btn btn-primary mt-3" data-bs-toggle="modal" href="#checkInModal">Reservar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODAL -->
+    <div class="modal fade" id="checkInModal" aria-hidden="true" aria-labelledby="checkInModal" tabindex="-1">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="checkInModal">Preencha as informações!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="row">
+                        <div class="col-md-6 border-end">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="name" class="form-label">Nome</label>
+                                    <input type="text" class="form-control" id="name" name="name"
+                                        placeholder="Gustavo Jarbas" disabled>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="lastname" class="form-label">Sobrenome</label>
+                                    <input type="text" class="form-control" id="lastname" name="lastname"
+                                        placeholder="Fonseca" disabled>
+                                </div>
+                                <div class="col-md-6 mt-3">
+                                    <label for="email" class="form-label">E-mail</label>
+                                    <input type="email" class="form-control" id="email" name="email"
+                                        placeholder="gustavo@gmail.com" disabled>
+                                </div>
+                                <div class="col-md-6 mt-3">
+                                    <label for="cpf" class="form-label">CPF</label>
+                                    <input type="number" class="form-control" id="cpf" name="cpf"
+                                        placeholder="123.456.789-10" disabled>
+                                </div>
+                                <div class="col-md-6 mt-3">
+                                    <label for="checkin">Data de Check-in</label>
+                                    <input type="date" class="form-control" id="checkin" value="2021-10-02" disabled>
+                                </div>
+                                <div class="col-md-6 mb-4 mt-3">
+                                    <label for="checkout">Data de Check-out</label>
+                                    <input type="date" class="form-control" id="checkout" value="2021-10-07" disabled>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault"
+                                            required>
+                                        <label class="form-check-label" for="flexSwitchCheckDefault">Eu confirmo
+                                            minhas
+                                            informações</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row gy-3">
+                                <div class="col-md-6">
+                                    <label for="cc-name" class="form-label">Nome do titular como no cartão</label>
+                                    <input type="text" class="form-control" id="cc-name" placeholder="" required="">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="cc-number" class="form-label">Número do cartão</label>
+                                    <input type="text" class="form-control" id="cc-number" placeholder="" required="">
+                                </div>
+
+                                <div class="col-md-4">
+                                    <label for="cc-expiration" class="form-label">Data de expiração</label>
+                                    <input type="text" class="form-control" id="cc-expiration" placeholder=""
+                                        required="">
+                                </div>
+
+                                <div class="col-md-4">
+                                    <label for="cc-cvv" class="form-label">Codigo de segurança</label>
+                                    <input type="text" class="form-control" id="cc-cvv" placeholder="" required="">
+                                </div>
+                            </div>
+                            <h2 class="mt-5">R$ 4.000</h2>
+                        </div>
+                        <div class="d-grid gap-1 md-auto mt-3">
+                            <input type="submit" class="btn btn-primary" value="Confirmar reserva">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="profile-info" aria-hidden="true" aria-labelledby="profile-info" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="profile-info">Suas informações</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="mb-3">
+                        <div class="pb-2 border-bottom">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label for="name" class="form-label">Nome</label>
+                                    <input type="text" class="form-control" id="name" name="name"
+                                        value="Gustavo Jarbas">
+                                </div>
+                                <div class="col-md-12 mt-3">
+                                    <label for="lastname" class="form-label">Sobrenome</label>
+                                    <input type="text" class="form-control" id="lastname" name="lastname"
+                                        value="Fonseca">
+                                </div>
+                                <div class="col-md-12 mt-3">
+                                    <label for="email" class="form-label">E-mail</label>
+                                    <input type="email" class="form-control" id="email" name="email"
+                                        value="gustavo@gmail.com">
+                                </div>
+                                <div class="col-md-12 mt-3">
+                                    <label for="cpf" class="form-label">CPF</label>
+                                    <input type="number" class="form-control" id="cpf" name="cpf"
+                                        placeholder="123.456.789-10" disabled>
+                                </div>
+                                <div class="col-md-6 mt-3">
+                                    <label for="password" class="form-label">Senha</label>
+                                    <input type="password" class="form-control" id="password" name="password">
+                                </div>
+                                <div class="col-md-6 mt-3">
+                                    <label for="passwordConfirm" class="form-label">Confirmar Senha</label>
+                                    <input type="password" class="form-control" id="passwordConfirm"
+                                        name="passwordConfirm">
+                                </div>
+                            </div>
+                            <div class="d-grid gap-2 col-6 mx-auto">
+                                <input type="submit" class="btn btn-primary mt-4" value="Atualizar">
+                            </div>
+                        </div>
+                    </form>
+                    <table class="table caption-top">
+                        <h3 class="text-center">Historico de reservas</caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Quarto</th>
+                                    <th scope="col">Check-in</th>
+                                    <th scope="col">Check-out</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Basico</td>
+                                    <td>19/09/2020</td>
+                                    <td>22/09/2020</td>
+                                </tr>
+                            </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
